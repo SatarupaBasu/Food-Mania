@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Mania</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="topnav" id="mytopnav">
+       <li class="brand"> <img  src="Pictures/Logo1.png" alt="Food Mania">Food Zone</li>
+        <a href="index.html">Home</a>
+        <a href="category.html"> Category</a>
+        <a href="About.html">About</a>
+        <a href="Login.html"><i class="fa-solid fa-user"></i> Login</a>
+        <div class="search-container">
+          <input type="text" placeholder="Search.." >
+          <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </div>
+  </div>
+    <!-- Recommended tab-->
+    <div class="container">
+      <h1 class="heading"> Recommended for you</h1>
+       <div class="box-container">
+        <!-- Container1 -->
+        <div class="food-container">
+          <img class="img" src="Pictures/Mio amore.png" alt="1">
+          <div class="right-sec">
+           <div class="fav">
+            <span><i onclick="Toggle(0)" id="0" class="fa-solid fa-heart"></i></span>
+          </div>
+           <br>
+            <div class="item">Mio Amore</div>
+            <div class="itemtype">Bakery</div>
+            <br>
+            <div><i class="fa-regular fa-clock"> 25-30 min </i></div>
+          </div>
+        </div>
+
+
+        <!-- Container 2 -->
+        <div class="food-container1">
+            <img class="img" src="Pictures/Wow momo.jpeg" alt="1">
+          <div class="right-sec">
+            <div class="fav">
+              <span><i onclick="Toggle(1)" id="1" class="fa-solid fa-heart"></i></span>
+            </div>
+            <br>
+            <div class="item">WOW! Momo</div>
+            <div class="itemtype">Momos</div>
+            <br>
+            <div><i class="fa-regular fa-clock"> 20-25 min </i></div>
+          </div>
+        </div>
+
+        <!--Container 3  -->
+        <div class="food-container2">
+         <img class="img" src="Pictures/The 36.png" alt="1">
+          <div class="right-sec">
+            <div class="fav">
+              <span><i onclick="Toggle(2)" id="2" class="fa-solid fa-heart"></i></span>
+            </div>
+            <br>
+            <div class="item">The 36-The Ultimate Chinese Cuisine</div>
+            <div class="itemtype">Chinese</div>
+            <br>
+            <div><i class="fa-regular fa-clock"> 35-40 min </i></div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+    <!-- Explore Tab -->
+      <h1 class="heading">explore</h1>
+    <div class="explore-container">
+        <!-- container1 -->
+        <div class="container1">
+          <img src="Pictures/offers.gif"alt="1">
+        <div class="bottom-sec">
+          <div class="item">Offers</div>
+          <div class="itemtype">& more</div>
+        </div>
+        </div>
+        <!-- container 2 -->
+        <div class="container2">
+          <img src="Pictures/resturant.gif" alt="1">
+          <div class="bottom-sec">
+            <div class="item">Resturants</div>
+            <div class="itemtype">& more</div>
+          </div>
+        </div>
+        <!-- container 3 -->
+        <div class="container3">
+          <img src="Pictures/healthy food.gif" alt="1">
+          <div class="bottom-sec">
+            <div class="item">Healthy Cuisines</div>
+            <div class="itemtype">& more</div>
+          </div>
+        </div>
+        <!-- container 4 -->
+        <div class="container4">
+            <img src="Pictures/food plaza.gif" alt="1">
+          <div class="bottom-sec">
+            <div class="item">Food Plaza</div>
+            <div class="itemtype">& more</div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+  <div class="bottom-nav">
+      <a href="#"><i class="fa-solid fa-truck"></i>  Delivery</a>
+      <a href="#"><i class="fa-solid fa-utensils"></i>  Dining</a>
+      <a href="#"><i class="fa-solid fa-trophy"></i>  Win Prize</a>
+      <a href="#"><i class="fa-solid fa-comments"></i>  Feedback </a>
+      <ul>
+        <li><a href="https://www.facebook.com/satarupa.basu.792"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/satarupa-basu-98293427b/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/SatarupaBasu"><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+  </div> 
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/59f361b963.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

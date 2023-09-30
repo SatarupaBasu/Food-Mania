@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Mania</title>
+  <link href="category.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-bars" id="sidebarOpen"></i>
+      <img src="Pictures/Logo1.png" alt="Food Mania"></i>FoodZone
+    </div>
+
+    <div class="search_bar">
+      <form>
+        <input type="search" placeholder="Search..">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="navbar_content">
+      <i class="fa-solid fa-sun" id="darkLight"></i>
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-solid fa-circle-user"></i>
+      <i class="fa-solid fa-ellipsis-vertical" id="sideboxOpen"></i>
+    </div>
+  </nav>
+  <nav class="sidebar">
+    <div class="menu_content">
+      <!-- dashboard -->
+      <ul class="menu_items">
+        <div class="menu_title menu_dashboard"></div>
+        <li class="item">
+          <a href="index.html" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-house"></i></span>
+            <span class="navlink">Home</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="category.html" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-cookie"></i></span>
+            <span class="navlink">Category</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="Login.html" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-user"></i></span>
+            <span class="navlink">Login</span>
+          </a>
+        </li>
+      </ul>
+      <!-- order -->
+      <ul class="menu_items">
+        <div class="menu_title menu_order"></div>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-truck"></i></span>
+            <span class="navlink">Delivery</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-utensils"></i></span>
+            <span class="navlink">Dining</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-trophy"></i></span>
+            <span class="navlink">Win Prize</span>
+          </a>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-comments"></i></span>
+            <span class="navlink">Feedback</span>
+          </a>
+        </li>
+      </ul>
+      <!-- contact -->
+      <ul class="menu_items">
+        <div class="menu_title menu_contact"></div>
+        <li class="item">
+          <a href="About.html" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-shop"></i></span>
+            <span class="navlink">About</span>
+          </a>
+        </li>
+        <li class="item">
+          <div href="#" class="nav_link submenu_item">
+            <span class="navicon"><i class="fa-solid fa-hashtag"></i></span>
+            <span class="navlink">Social Media</span>
+          </div>
+          <ul class="menu_items submenu">
+            <a href="https://www.facebook.com/satarupa.basu.792" class="nav_link sublink"><i
+                class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://www.linkedin.com/in/satarupa-basu-98293427b/" class="nav_link sublink"><i
+                class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="https://github.com/SatarupaBasu" class="nav_link sublink"><i class="fa-brands fa-github"></i>
+              GitHub</a>
+          </ul>
+        </li>
+        <li class="item">
+          <a href="#" class="nav_link">
+            <span class="navicon"><i class="fa-solid fa-phone"></i></span>
+            <span class="navlink">Contact</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Sidebar Open/Close -->
+      <div class="bottom_content">
+        <div class="bottom expand_sidebar">
+          <span> Expand</span>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </div>
+        <div class="bottom collapse_sidebar">
+          <span> Collapse</span>
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- slider -->
+  <div class="slideshow-container">
+    <div class="slider-btns">
+      <span id="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
+      <span id="next-btn"><i class="fa-solid fa-angle-right"></i></span>
+    </div>
+    <div class="myslides fade">
+      <img src="Pictures/fast-food.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="myslides fade">
+      <img src="Pictures/lunch.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="myslides fade">
+      <img src="Pictures/snacks.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="myslides fade">
+      <img src="Pictures/dessert.jpeg" alt="" style="width: 100%;">
+    </div>
+    <br>
+    <div class="slider-wrapper">
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <div class="category-container">
+
+      <div class="category-container1">
+        <div class="category-text">
+          <a href="#">Fast Foods</a>
+        </div>
+      </div>
+      <div class="category-container2">
+        <div class="category-text">
+
+          <a href="#">Lunch & Dinner</a>
+        </div>
+      </div>
+      <div class="category-container3">
+        <div class="category-text">
+          <a href="#">Snacks</a>
+        </div>
+      </div>
+      <div class="category-container4">
+        <div class="category-text">
+          <a href="#">Desserts</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- sidebox -->
+  <div class="sidebox">
+    <div class="boxes">
+      <div class="box text"><a href="https://www.google.com/search?q=indian+dishes&rlz=1C1CHZN_enIN933IN933&oq=indian+dishes&aqs=chrome..69i57j0i512l9.7903j1j15&sourceid=chrome&ie=UTF-8">Indian</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=italian+dishes&rlz=1C1CHZN_enIN933IN933&oq=italian+&aqs=chrome.1.69i57j0i67i433i650j0i67i650l7j0i67i433i457i650.5934j0j15&sourceid=chrome&ie=UTF-8">Italian</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=chineese+dishes&rlz=1C1CHZN_enIN933IN933&oq=chineese+dishes&aqs=chrome..69i57j0i10i433i512j0i10i512l7j46i10i512.8974j0j15&sourceid=chrome&ie=UTF-8">Chinese</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=Mughlai+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKlki1PBxANN1OQ4UdhXfjOxuRu2JA%3A1695372337002&ei=MFQNZcadN6CXseMPvPq_-Ao&ved=0ahUKEwjG9ZyP6r2BAxWgS2wGHTz9D68Q4dUDCBA&uact=5&oq=Mughlai+dishes&gs_lp=Egxnd3Mtd2l6LXNlcnAiDk11Z2hsYWkgZGlzaGVzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSOM5UJ4FWL8ycAF4ApABAJgBwQGgAfcMqgEEMC4xMLgBA8gBAPgBAcICBBAAGEfCAggQABgHGB4YCsICChAuGIoFGLEDGEPCAggQABiKBRiRAsICDBAuGAcYHhjHARjRA8ICGRAuGIoFGLEDGEMYlwUY3AQY3gQY3wTYAQHCAgcQLhgNGIAEwgIHEAAYDRiABMICBhAAGB4YDcICCBAAGB4YDRgPwgIIEAAYBRgeGA3iAwQYACBBiAYBkAYIugYGCAEQARgU&sclient=gws-wiz-serp">Mughlai</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=Swedish+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKnksueT684dcATWc5dT6kuZcb1wZg%3A1695372401350&ei=cVQNZaz0FPvOseMPmquZgAY&ved=0ahUKEwjs8Pmt6r2BAxV7Z2wGHZpVBmAQ4dUDCBA&uact=5&oq=Swedish+dishes&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlN3ZWRpc2ggZGlzaGVzMggQABiKBRiRAjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkjhI1AAWKQZcAB4AZABAJgBxgKgAbEPqgEFMi03LjG4AQPIAQD4AQHCAgoQLhgNGIAEGLEDwgITEAAYDRiABBixAxiDARixAxiDAcICDRAuGA0YgAQYsQMYsQPCAhkQLhgNGIAEGLEDGJcFGNwEGN4EGOAE2AEBwgIHEAAYDRiABOIDBBgAIEGIBgG6BgYIARABGBQ&sclient=gws-wiz-serp">Swedish</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=afgani+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKn9-zsff3Wi_bnN1RuaX-7rFhkryQ%3A1695372482045&ei=wlQNZb2">Afgani</a></div>
+    </div>
+    <div class="mini-slideshow">
+      <div class="image fade">
+        <img src="Pictures/indian-restro.jpg" alt="" style="width: 100%;">
+      </div>
+      <div class="image fade">
+        <img src="Pictures/italian-restro.jpg" alt=""style="width: 100%;">
+      </div>
+      <div class="image fade">
+        <img src="Pictures/chinese-restro.jpg" alt="" style="width: 100%;">
+      </div>
+      <div class="image fade">
+        <img src="Pictures/mughal-restro.jpg" alt="" style="width: 100%;">
+      </div>
+      <div class="image fade">
+        <img src="Pictures/swedish-restro.png"alt="" style="width: 100%;">
+      </div>
+      <div class="image fade">
+        <img src="Pictures/afgani-restro.png" alt="" style="width: 100%;">
+      </div>
+      <div class="minidots">
+        <span class="slickdot"></span>
+        <span class="slickdot"></span>
+        <span class="slickdot"></span>
+        <span class="slickdot"></span>
+        <span class="slickdot"></span>
+        <span class="slickdot"></span>
+      </div>
+    </div>
+  </div>
+  <script src="category.js"></script>
+  <script src="https://kit.fontawesome.com/59f361b963.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
