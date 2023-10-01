@@ -171,7 +171,14 @@ body{
     from {opacity: .4} 
     to {opacity: 1}
   }
-  
+  @media screen and (max-width: 600px) {
+    .slideshow-text p{
+      font-size: 45px;
+    }
+    .slider span{
+      display:none;
+    }
+  }
   .bottom-nav{
     overflow: hidden;
     background-color:rgba(56, 53, 53, 0.438);
