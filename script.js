@@ -21,7 +21,7 @@ function Toggle(id){
     console.log(id);
     var element =document.getElementById(id);
     if(element.style.color== 'red'){
-        element.style.color = 'rgb(5, 247, 5)';
+        element.style.color = 'rgb(39, 38, 38)';
         
     }
     
