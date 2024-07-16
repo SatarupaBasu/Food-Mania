@@ -197,8 +197,8 @@ body{
 
 }
 #Cart-count{
-    position: absolute;
-    top:4px;
+    position: relative;
+    bottom:17px;
     background-color: rgb(245, 133, 133);
     color: white;
     border-radius: 50%;
@@ -218,6 +218,12 @@ body{
   z-index: 1000;
   border-radius: 5px;
   backdrop-filter: blur(5px);
+}
+.cart-box .Cross{
+  position: relative;
+  left:260px;
+  bottom:90px;
+  cursor: pointer;
 }
 .quantity {
   display: flex;
