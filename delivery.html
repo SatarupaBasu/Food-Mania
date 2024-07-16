@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Mania</title>
+  <link href="delivery.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./Pictures/Logo1.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="topbar" id="mytop">
+    <li><img src="Pictures/Logo1.png" alt="Food Mania"></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="category.html">Category</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="">More</a></li>
+    <div class="right-end">
+      <div class="search-bar">
+        <form class="search" role="search">
+          <input type="text" name="search" placeholder="Search..">
+          <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+      <!-- Cart Structure -->
+      <div class="cart" id="Cart" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping" id="order-boxopen" aria-hidden="true"></i>
+        <span id="Cart-count">0</span>
+      </div>
+      <div class="login"><a href="Login.html"><i class="fa-solid fa-circle-user"></i></a></div>
+    </div>
+  </div>
+  <div id="cart-box" class="cart-box">
+    <h2 class="heading">Your Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be added here -->
+    </ul>
+    <br>
+    <div class="bottomnav">
+      <button> Check Out</button>
+    </div>
+  </div>
+  <h1 class="heading">Pick Up your Favourites</h1>
+  <div class="box">
+    <div class="boxes text"><a href="#Wow-momos">Wow!Momos</a></div>
+    <div class="boxes text"><a href="#La Pinoz Pizza">La Pino'z Pizza</a></div>
+    <div class="boxes text"><a href="#Haka">Haka</a></div>
+    <div class="boxes text"><a href="#Cafe Coffee Day">Cafe Coffee Day</a></div>
+    <div class="boxes text"><a href="#Mio Amore">Mio Amore</a></div>
+    <div class="boxes text"><a href="#Aminia">Aminia</a></div>
+    <div class="boxes text"><a href="#Kolkata">Kolkata Rajbari</a></div>
+    <div class="boxes text"><a href="#Shanghai">Shanghai</a></div>
+  </div>
+  <br>
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="Wow-momos">
+        <div class="left">
+          <img src="Pictures/Wow Momo1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Veg Sizzler Momos</div>
+          <div class="price">₹ 349</div>
+          <br>
+          <button onclick="addToCart('Veg Sizzler Momos    ₹ 349')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Wow-momos">
+        <div class="left">
+          <img src="Pictures/Wow Momo2.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken Sizzler Momos</div>
+          <div class="price">₹ 359</div>
+          <br>
+          <button onclick="addToCart('Chicken Sizzler Momos   ₹ 359')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Wow-momos">
+        <div class="left">
+          <img src="Pictures/Wow Momo3.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Paneer Tandoori Momos</div>
+          <div class="price">₹ 225</div>
+          <br>
+          <button onclick="addToCart('Paneer Tandoori Momos   ₹ 225')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Wow-momos">
+        <div class="left">
+          <img src="Pictures/Wow Momo4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chocolate Momo Platter</div>
+          <div class="price">₹ 199</div>
+          <br>
+          <button onclick="addToCart('Chocolate Momo Platter    ₹ 199')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Wow-momos">
+        <div class="left">
+          <img src="Pictures/Wow Momo5.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Cheese Pan Fried Momos</div>
+          <div class="price">₹ 255</div>
+          <br>
+          <button onclick="addToCart('Cheese Pan Fried Momos  ₹ 255')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Wow-momos">
+        <div class="left">
+          <img src="Pictures/Wow Momo6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken Fried Momos</div>
+          <div class="price">₹ 105</div>
+          <br>
+          <button onclick="addToCart('Chicken Fried Momos ₹ 105')">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="La Pinoz Pizza">
+        <div class="left">
+          <img src="Pictures/La Pinoz1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Keema & Onion Pizza</div>
+          <div class="price">₹ 175</div>
+          <br>
+          <button onclick="addToCart('Keema & Onion Pizza    ₹ 175')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="La Pinoz Pizza">
+        <div class="left">
+          <img src="Pictures/La Pinoz2.jpeg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Capsicum & Chicken Tikka Pizza</div>
+          <div class="price">₹ 150</div>
+          <br>
+          <button onclick="addToCart('Capsicum & Chicken Tikka Pizza   ₹ 150')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="La Pinoz Pizza">
+        <div class="left">
+          <img src="Pictures/La Pinoz3.jpeg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Pesto Non-veg</div>
+          <div class="price">₹ 140</div>
+          <br>
+          <button onclick="addToCart('Pesto Non-veg   ₹ 140')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="La Pinoz Pizza">
+        <div class="left">
+          <img src="Pictures/La Pinoz4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Jalapenos, Sweet Corns & Paneer Pizza</div>
+          <div class="price">₹ 170</div>
+          <br>
+          <button onclick="addToCart('Jalapenos, Sweet Corns & Paneer Pizza   ₹ 170')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="La Pinoz Pizza">
+        <div class="left">
+          <img src="Pictures/La Pinoz5.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken Seekh & Chicken Salami Pizza</div>
+          <div class="price">₹ 170</div>
+          <br>
+          <button onclick="addToCart('Chicken Seekh & Chicken Salami Pizza  ₹ 170')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="La Pinoz Pizza">
+        <div class="left">
+          <img src="Pictures/La Pinoz6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Spicy Non-veg</div>
+          <div class="price">₹ 140</div>
+          <br>
+          <button onclick="addToCart('Spicy Non-veg   ₹ 140')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="Haka">
+        <div class="left">
+          <img src="Pictures/Haka1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Traditional Vegetable Spring Rolls</div>
+          <div class="price">₹ 295</div>
+          <br>
+          <button onclick="addToCart('Traditional Vegetable Spring Rolls    ₹ 295')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Haka">
+        <div class="left">
+          <img src="Pictures/Haka2.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Drums of Heavon Hong Kong Style</div>
+          <div class="price">₹ 415</div>
+          <br>
+          <button onclick="addToCart('Drums of Heavon Hong Kong Style   ₹ 415')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Haka">
+        <div class="left">
+          <img src="Pictures/Haka3.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Haka Chilli Chicken</div>
+          <div class="price">₹ 425</div>
+          <br>
+          <button onclick="addToCart('Haka Chilli Chicken  ₹ 425')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Haka">
+        <div class="left">
+          <img src="Pictures/Haka4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Traditional Chicken Spring Rolls</div>
+          <div class="price">₹ 355</div>
+          <br>
+          <button onclick="addToCart('Traditional Chicken Spring Rolls  ₹ 355')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Haka">
+        <div class="left">
+          <img src="Pictures/Haka5.jpeg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Pan Fried Fish with mango Musturd</div>
+          <div class="price">₹ 435</div>
+          <br>
+          <button onclick="addToCart('Pan Fried Fish with mango Musturd  ₹ 435')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Haka">
+        <div class="left">
+          <img src="Pictures/Haka6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Singapore Chilli Prawn</div>
+          <div class="price">₹ 495</div>
+          <br>
+          <button onclick="addToCart('Singapore Chilli Prawn   ₹ 495')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+<!-- Cafe Coffee Day -->
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="Cafe Cofee Day">
+        <div class="left">
+          <img src="Pictures/Cafe1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Aztec Coffee</div>
+          <div class="price">₹ 205</div>
+          <br>
+          <button onclick="addToCart('Aztec Coffee    ₹ 205')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Cafe Coffee Day">
+        <div class="left">
+          <img src="Pictures/Cafe2.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Inverted Cappuccino with Jaggery</div>
+          <div class="price">₹ 148</div>
+          <br>
+          <button onclick="addToCart('Inverted Cappuccino with Jaggery   ₹ 148')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Cafe Coffee Day">
+        <div class="left">
+          <img src="Pictures/Cafe3.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Filter Coffee with Jaggery</div>
+          <div class="price">₹ 138</div>
+          <br>
+          <button onclick="addToCart('Filter Coffee with Jaggery  ₹ 138')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Cafe Coffee Day">
+        <div class="left">
+          <img src="Pictures/Cafe4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Darjelling Tea</div>
+          <div class="price">₹ 124</div>
+          <br>
+          <button onclick="addToCart('Darjelling Tea  ₹ 124')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Cafe Coffee Day">
+        <div class="left">
+          <img src="Pictures/Cafe5.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Banana Caramel Frappe</div>
+          <div class="price">₹ 214</div>
+          <br>
+          <button onclick="addToCart('Banana Caramel Frappe  ₹ 214')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Cafe Coffee Day">
+        <div class="left">
+          <img src="Pictures/Cafe6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Sugarcane Refresher</div>
+          <div class="price">₹ 167</div>
+          <br>
+          <button onclick="addToCart('Sugarcane Refresher   ₹ 167')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+<!-- Mio Amore -->
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="Mio Amore">
+        <div class="left">
+          <img src="Pictures/Mio1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Black Forest</div>
+          <div class="price">₹ 400</div>
+          <br>
+          <button onclick="addToCart('Black Forest    ₹ 400')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Mio Amore">
+        <div class="left">
+          <img src="Pictures/Mio2.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Butterscotch</div>
+          <div class="price">₹ 285</div>
+          <br>
+          <button onclick="addToCart('Butterscotch   ₹ 285')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Mio Amore">
+        <div class="left">
+          <img src="Pictures/Mio3.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Cheese Sandwich</div>
+          <div class="price">₹ 30</div>
+          <br>
+          <button onclick="addToCart('Cheese Sandwich  ₹ 30')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Mio Amore">
+        <div class="left">
+          <img src="Pictures/Mio4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken Patties </div>
+          <div class="price">₹ 25</div>
+          <br>
+          <button onclick="addToCart('Chicken Patties   ₹ 25')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Mio Amore">
+        <div class="left">
+          <img src="Pictures/Mio5.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken Cutlet</div>
+          <div class="price">₹ 44</div>
+          <br>
+          <button onclick="addToCart('Chicken Cutlet  ₹ 44')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Mio Amore">
+        <div class="left">
+          <img src="Pictures/Mio6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken 65 Roll</div>
+          <div class="price">₹ 45</div>
+          <br>
+          <button onclick="addToCart('Chicken 65 Roll   ₹ 45')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <!-- Aminia -->
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="Aminia">
+        <div class="left">
+          <img src="Pictures/Aminia1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Vegetable Dum Biriyani</div>
+          <div class="price">₹ 250</div>
+          <br>
+          <button onclick="addToCart('Vegetable Dum Biriyani  ₹ 250')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Aminia">
+        <div class="left">
+          <img src="Pictures/Aminia2.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Peas Pulao</div>
+          <div class="price">₹ 170</div>
+          <br>
+          <button onclick="addToCart('Peas Pulao   ₹ 170')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Aminia">
+        <div class="left">
+          <img src="Pictures/Aminia3.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Zeera Rice</div>
+          <div class="price">₹ 170</div>
+          <br>
+          <button onclick="addToCart('Zeera Rice  ₹ 170')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Aminia">
+        <div class="left">
+          <img src="Pictures/Aminia4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken Tandoori Full</div>
+          <div class="price">₹ 340</div>
+          <br>
+          <button onclick="addToCart('Chicken Tandoori Full  ₹ 340')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Aminia">
+        <div class="left">
+          <img src="Pictures/Aminia5.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chicken Handi Kebab</div>
+          <div class="price">₹ 210</div>
+          <br>
+          <button onclick="addToCart('Chicken Handi Kebab  ₹ 210')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Aminia">
+        <div class="left">
+          <img src="Pictures/Aminia6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Mutton Special Biriyani</div>
+          <div class="price">₹ 325</div>
+          <br>
+          <button onclick="addToCart('Mutton Special Biriyani   ₹ 325')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+<!-- Kolkata Rajbari -->
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="Kolkata">
+        <div class="left">
+          <img src="Pictures/Kolkata1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Borshoboron Thali</div>
+          <div class="price">₹ 1199</div>
+          <br>
+          <button onclick="addToCart('Borshoboron Thali    ₹ 1199')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Kolkata">
+        <div class="left">
+          <img src="Pictures/Kolkata2.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Special Ilish Thali</div>
+          <div class="price">₹ 999</div>
+          <br>
+          <button onclick="addToCart('Special Ilish Thali   ₹ 999')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Kolkata">
+        <div class="left">
+          <img src="Pictures/Kolkata3.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Daab Chingri Thali</div>
+          <div class="price">₹ 949</div>
+          <br>
+          <button onclick="addToCart('Daab Chingri Thali  ₹ 949')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Kolkata">
+        <div class="left">
+          <img src="Pictures/Kolkata4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">MCV Thali</div>
+          <div class="price">₹ 599</div>
+          <br>
+          <button onclick="addToCart('MCV Thali  ₹ 599')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Kolkata">
+        <div class="left">
+          <img src="Pictures/Kolkata5.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Rajbari Ilish Thali</div>
+          <div class="price">₹ 499</div>
+          <br>
+          <button onclick="addToCart('Rajbari Ilish Thali  ₹ 499')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Kolkata">
+        <div class="left">
+          <img src="Pictures/Kolkata6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Rajbari Pulao Thali</div>
+          <div class="price">₹ 299</div>
+          <br>
+          <button onclick="addToCart('Rajbari Pulao Thali   ₹ 299')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="ordercontainer">
+    <div class="order-container">
+      <div class="order" id="Shanghai">
+        <div class="left">
+          <img src="Pictures/Shanghai1.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Dynamite Prawn (8pcs)</div>
+          <div class="price">₹ 650</div>
+          <br>
+          <button onclick="addToCart('Dynamite Prawn (8pcs)    ₹ 295')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Shanghai">
+        <div class="left">
+          <img src="Pictures/Shanghai2.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Japanese Donburi Bowl (Chicken)</div>
+          <div class="price">₹ 755</div>
+          <br>
+          <button onclick="addToCart('Japanese Donburi Bowl (Chicken)   ₹ 755')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Shanghai">
+        <div class="left">
+          <img src="Pictures/Shanghai3.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Japanese-Ramen Bowl (Chicken)</div>
+          <div class="price">₹ 655</div>
+          <br>
+          <button onclick="addToCart('Japanese-Ramen Bowl (Chicken)  ₹ 655')">Add to Cart</button>
+        </div>
+      </div>
+  
+      <div class="order" id="Shanghai">
+        <div class="left">
+          <img src="Pictures/Shanghai4.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Japanese-Ramen Bowl (Veg)</div>
+          <div class="price">₹ 555</div>
+          <br>
+          <button onclick="addToCart('Japanese-Ramen Bowl (Veg)  ₹ 555')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Shanghai">
+        <div class="left">
+          <img src="Pictures/Shanghai5.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Chilli Garlic Noodles (Chicken)</div>
+          <div class="price">₹ 225</div>
+          <br>
+          <button onclick="addToCart('Chilli Garlic Noodles (Chicken)  ₹ 225')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="order" id="Shanghai">
+        <div class="left">
+          <img src="Pictures/Shanghai6.jpg" alt="1">
+        </div>
+        <div class="right">
+          <div class="item">Hakka Noodles (Chicken)</div>
+          <div class="price">₹ 235</div>
+          <br>
+          <button onclick="addToCart('Hakka Noodles (Chicken)   ₹ 235')">Add to Cart</button>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  
+  <div class="bottom">
+    <button onclick="toggleCart()"><a href="#Cart">Go To Cart</a></button>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/59f361b963.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
