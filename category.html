@@ -20,8 +20,8 @@
     </div>
 
     <div class="search_bar">
-      <form>
-        <input type="search" placeholder="Search..">
+      <form id="searchForm">
+        <input type="search" id="searchInput" placeholder="Search..">
         <button type="submit">Search</button>
       </form>
     </div>
@@ -60,7 +60,7 @@
       <ul class="menu_items">
         <div class="menu_title menu_order"></div>
         <li class="item">
-          <a href="#" class="nav_link">
+          <a href="delivery.html" class="nav_link">
             <span class="navicon"><i class="fa-solid fa-truck"></i></span>
             <span class="navlink">Delivery</span>
           </a>
@@ -142,7 +142,7 @@
     </div>
 
     <div class="myslides fade">
-      <img src="Pictures/snacks.jpg" alt="" style="width: 100%;">
+      <img src="Pictures/Dinner.jpg" alt="" style="width: 100%;">
     </div>
 
     <div class="myslides fade">
@@ -161,23 +161,23 @@
 
       <div class="category-container1">
         <div class="category-text">
-          <a href="#">Fast Foods</a>
+          <a href="https://www.google.com/search?q=Fast+Foods" target="_blank">Fast Foods</a>
         </div>
       </div>
       <div class="category-container2">
         <div class="category-text">
 
-          <a href="#">Lunch & Dinner</a>
+          <a href="https://www.google.com/search?q=Lunch+Items"target="_blank">Lunch Items</a>
         </div>
       </div>
       <div class="category-container3">
         <div class="category-text">
-          <a href="#">Snacks</a>
+          <a href="https://www.google.com/search?q=Dinner+Items"target="_blank">Dinner Items</a>
         </div>
       </div>
       <div class="category-container4">
         <div class="category-text">
-          <a href="#">Desserts</a>
+          <a href="https://www.google.com/search?q=Dessert+Items"target="_blank">Dessert Items</a>
         </div>
       </div>
     </div>
@@ -185,47 +185,47 @@
   <!-- sidebox -->
   <div class="sidebox">
     <div class="boxes">
-      <div class="box text"><a href="https://www.google.com/search?q=indian+dishes&rlz=1C1CHZN_enIN933IN933&oq=indian+dishes&aqs=chrome..69i57j0i512l9.7903j1j15&sourceid=chrome&ie=UTF-8">Indian</a></div>
-      <div class="box text"><a href="https://www.google.com/search?q=italian+dishes&rlz=1C1CHZN_enIN933IN933&oq=italian+&aqs=chrome.1.69i57j0i67i433i650j0i67i650l7j0i67i433i457i650.5934j0j15&sourceid=chrome&ie=UTF-8">Italian</a></div>
-      <div class="box text"><a href="https://www.google.com/search?q=chineese+dishes&rlz=1C1CHZN_enIN933IN933&oq=chineese+dishes&aqs=chrome..69i57j0i10i433i512j0i10i512l7j46i10i512.8974j0j15&sourceid=chrome&ie=UTF-8">Chinese</a></div>
-      <div class="box text"><a href="https://www.google.com/search?q=Mughlai+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKlki1PBxANN1OQ4UdhXfjOxuRu2JA%3A1695372337002&ei=MFQNZcadN6CXseMPvPq_-Ao&ved=0ahUKEwjG9ZyP6r2BAxWgS2wGHTz9D68Q4dUDCBA&uact=5&oq=Mughlai+dishes&gs_lp=Egxnd3Mtd2l6LXNlcnAiDk11Z2hsYWkgZGlzaGVzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSOM5UJ4FWL8ycAF4ApABAJgBwQGgAfcMqgEEMC4xMLgBA8gBAPgBAcICBBAAGEfCAggQABgHGB4YCsICChAuGIoFGLEDGEPCAggQABiKBRiRAsICDBAuGAcYHhjHARjRA8ICGRAuGIoFGLEDGEMYlwUY3AQY3gQY3wTYAQHCAgcQLhgNGIAEwgIHEAAYDRiABMICBhAAGB4YDcICCBAAGB4YDRgPwgIIEAAYBRgeGA3iAwQYACBBiAYBkAYIugYGCAEQARgU&sclient=gws-wiz-serp">Mughlai</a></div>
-      <div class="box text"><a href="https://www.google.com/search?q=Swedish+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKnksueT684dcATWc5dT6kuZcb1wZg%3A1695372401350&ei=cVQNZaz0FPvOseMPmquZgAY&ved=0ahUKEwjs8Pmt6r2BAxV7Z2wGHZpVBmAQ4dUDCBA&uact=5&oq=Swedish+dishes&gs_lp=Egxnd3Mtd2l6LXNlcnAiDlN3ZWRpc2ggZGlzaGVzMggQABiKBRiRAjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkjhI1AAWKQZcAB4AZABAJgBxgKgAbEPqgEFMi03LjG4AQPIAQD4AQHCAgoQLhgNGIAEGLEDwgITEAAYDRiABBixAxiDARixAxiDAcICDRAuGA0YgAQYsQMYsQPCAhkQLhgNGIAEGLEDGJcFGNwEGN4EGOAE2AEBwgIHEAAYDRiABOIDBBgAIEGIBgG6BgYIARABGBQ&sclient=gws-wiz-serp">Swedish</a></div>
-      <div class="box text"><a href="https://www.google.com/search?q=afgani+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKn9-zsff3Wi_bnN1RuaX-7rFhkryQ%3A1695372482045&ei=wlQNZb2">Afgani</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=indian+dishes&rlz=1C1CHZN_enIN933IN933&oq=indian+dishes"target="_blank">Indian</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=italian+dishes&rlz=1C1CHZN_enIN933IN933&oq=italian+&aqs"target="_blank">Italian</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=chineese+dishes&rlz=1C1CHZN_enIN933IN933&oq=chineese+dishes&aqs"target="_blank">Chinese</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=Mughlai+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf"target="_blank">Mughlai</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=Swedish+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf"target="_blank">Swedish</a></div>
+      <div class="box text"><a href="https://www.google.com/search?q=afgani+dishes&sca_esv=567545457&rlz=1C1CHZN_enIN933IN933&sxsrf"target="_blank">Afgani</a></div>
     </div>
     <div class="mini-slideshow">
       <div class="image fade">
         <div class="content">
-          <p><a href="https://www.google.com/search?q=Indian+Restaurant&rlz=1C1CHZN_enIN933IN933&oq=Indian+Restaurant&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORixAxjJAxiABDIGCAEQRRhAMgsIAhBFGCcYOxiKBTIKCAMQABiSAxiABDIKCAQQABiSAxiKBTIHCAUQABiABDIHCAYQABiABDINCAcQLhivARjHARiABNIBCjE1NTQyajFqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8">Indian Restro</a></p>
+          <p><a href="https://www.google.com/search?q=Indian+Restaurant&rlz=1C1CHZN_enIN933IN933&oq=Indian+Restaurant&gs"target="_blank">Indian Restro</a></p>
         </div>
         <img src="Pictures/indian-restro.jpg" alt="" style="width: 100%;">
       </div>
       <div class="image fade">
         <div class="content">
-          <p><a href="https://www.google.com/search?q=Top+Italian+Restaurant+in+Kolkata&sca_esv=571674645&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKmvAtpwH2yGAbzLqNjOZKsCqV45Wg%3A1696746727055&ei=50wiZdj7AujMseMP3aq2qAM&ved=0ahUKEwiYi8KP6uWBAxVoZmwGHV2VDTUQ4dUDCBA&uact=5&oq=Top+Italian+Restaurant+in+Kolkata&gs_lp=Egxnd3Mtd2l6LXNlcnAiIVRvcCBJdGFsaWFuIFJlc3RhdXJhbnQgaW4gS29sa2F0YTIFEAAYgAQyCBAAGBYYHhgKSKsbUPYBWOUYcAF4AZABAJgByAGgAagOqgEGMC4xMC4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICChAAGIoFGLADGEPCAggQABiKBRiRAsICBxAAGIoFGEPCAggQABgWGB4YD8ICBhAAGBYYHsICChAAGBYYHhgPGArCAggQABiKBRiGA-IDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp">Italian Restro</a></p>
+          <p><a href="https://www.google.com/search?q=Top+Italian+Restaurant+in+Kolkata&sca_esv=571674645&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKmvAtpwH2yGAbzLqNjOZKsCqV45Wg%3A1696746727055&ei=50wiZdj7AujMseMP3aq2qAM&ved=0ahUKEwiYi8KP6uWBAxVoZmwGHV2VDTUQ4dUDCBA&uact=5&oq=Top+Italian+Restaurant+in+Kolkata&gs_lp"target="_blank">Italian Restro</a></p>
         </div>
         <img src="Pictures/italian-restro.jpg" alt=""style="width: 100%;">
       </div>
       <div class="image fade">
         <div class="content">
-          <p><a href="https://www.google.com/search?q=top+chinese+restaurants+in+kolkata&rlz=1C1CHZN_enIN933IN933&oq=Top+chinese+rest&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCggBEAAYyQMYgAQyBggCEEUYOTIKCAMQABiSAxiKBTIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTk4MzhqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8" >Chinese Restro</a></p>
+          <p><a href="https://www.google.com/search?q=top+chinese+restaurants+in+kolkata&rlz=1C1CHZN_enIN933IN933&oq=Top+chinese+rest&gs_lcrp" target="_blank">Chinese Restro</a></p>
         </div>
         <img src="Pictures/chinese-restro.jpg" alt="" style="width: 100%;">
       </div>
       <div class="image fade">
         <div class="content">
-          <p><a href="https://www.google.com/search?q=top+mughlai+restaurants+in+kolkata&sca_esv=572370827&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKni8jD2Z4GpKQSYdJA0Y5sQd0cPoA%3A1696996205883&ei=bRsmZYq6NbGaseMP34q-2AE&oq=top+mugh+restaurants+in+kolkata&gs_lp=Egxnd3Mtd2l6LXNlcnAiH3RvcCBtdWdoIHJlc3RhdXJhbnRzIGluIGtvbGthdGEqAggAMgcQABgNGIAEMggQABgIGAcYHjIIEAAYigUYhgMyCBAAGIoFGIYDSIowUOgCWOQacAF4AZABAJgBiAKgAdwRqgEFMC42LjW4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIHECMYsAIYJ8ICBhAAGAcYHsICChAAGAcYHhgPGArCAgoQABgIGAcYHhgPwgIFEAAYgATCAggQABgIGB4YDcICChAAGAgYHhgNGA_iAwQYACBBiAYBkAYI&sclient=gws-wiz-serp">Mughal Restro</a></p>
+          <p><a href="https://www.google.com/search?q=top+mughlai+restaurants+in+kolkata&sca_esv">Mughal Restro</a></p>
         </div>
         <img src="Pictures/mughal-restro.jpg" alt="" style="width: 100%;">
       </div>
       <div class="image fade">
         <div class="content">
-          <p><a href="https://www.google.com/search?q=top+swedish+restaurants+in+kolkata&sca_esv=572370827&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKmmd2fhbbKjbre9_PDk1lZfjkXTQQ%3A1696996266257&ei=qhsmZeeFD5fhseMPvIyXkA0&oq=top+swed+restaurants+in+kolkata&gs_lp=Egxnd3Mtd2l6LXNlcnAiH3RvcCBzd2VkIHJlc3RhdXJhbnRzIGluIGtvbGthdGEqAggAMgoQIRigARjDBBgKMgoQIRigARjDBBgKMgoQIRigARjDBBgKSKk1UMkKWKclcAF4AZABAJgBggKgAZYRqgEFMC42LjW4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEAAYRxjWBBjJAxiwA8ICCxAAGIoFGJIDGLADwgIGEAAYBxgewgIIEAAYCBgHGB7CAgoQABgHGB4YDxgKwgIKEAAYCBgHGB4YD8ICCBAAGIoFGIYDwgIFEAAYgATCAgcQABgNGIAEwgIIECEYoAEYwwTiAwQYACBBiAYBkAYJ&sclient=gws-wiz-serp">Swedish Restro</a></p>
+          <p><a href="https://www.google.com/search?q=top+swedish+restaurants+in+kolkata&sca_esv=572370827&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKmmd2fhbbKjbre9_PDk1lZfjkXTQQ%3A1696996266257&ei=qhsmZeeFD5fhseMPvIyXkA0&oq=top+swed+restaurants+in+kolkata&gs_lp"target="_blank">Swedish Restro</a></p>
         </div>
         <img src="Pictures/swedish-restro.png"alt="" style="width: 100%;">
       </div>
       <div class="image fade">
         <div class="content">
-          <p><a href="https://www.google.com/search?q=top+afgani+restaurants+in+kolkata&sca_esv=572370827&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKmsmheTfBXPAVGuJhTJBnoNdHtVkQ%3A1696996383803&ei=HxwmZZWhL5TkseMPtcOcuAQ&ved=0ahUKEwjVrI-VjO2BAxUUcmwGHbUhB0cQ4dUDCBA&uact=5&oq=top+afgani+restaurants+in+kolkata&gs_lp=Egxnd3Mtd2l6LXNlcnAiIXRvcCBhZmdhbmkgcmVzdGF1cmFudHMgaW4ga29sa2F0YTIKECEYoAEYwwQYCjIKECEYoAEYwwQYCkj-bVCNCljrX3ABeAGQAQCYAdACoAGAGKoBBzAuNi40LjO4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIFEAAYogTCAgUQABiABMICBhAAGAcYHsICBxAAGA0YgATCAggQABgIGAcYHsICChAAGAUYHhgNGArCAggQABgIGB4YDcICCBAAGIoFGIYDwgIKEAAYCBgeGA0YD-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp">Afgani Restro</a></p>
+          <p><a href="https://www.google.com/search?q=top+afgani+restaurants+in+kolkata&sca_esv=572370827&rlz=1C1CHZN_enIN933IN933&sxsrf=AM9HkKmsmheTfBXPAVGuJhTJBnoNdHtVkQ%3A1696996383803&ei=HxwmZZWhL5TkseMPtcOcuAQ&ved=0ahUKEwjVrI-VjO2BAxUUcmwGHbUhB0cQ4dUDCBA&uact=5&oq=top+afgani+restaurants+in+kolkata&gs_lp"target="_blank">Afgani Restro</a></p>
         </div>
         <img src="Pictures/afgani-restro.png" alt="" style="width: 100%;">
       </div>

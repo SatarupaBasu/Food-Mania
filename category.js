@@ -158,3 +158,13 @@ function showSlides(){
   dott[slideIndex-1].className += " active";
   setTimeout(showSlides, 6000); // Change image every 6 seconds
 }
+// Category Search bar
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+  var query = document.getElementById('searchInput').value;
+  var googleSearchUrl = 'https://www.google.com/search?q=' + encodeURIComponent(query);
+
+  window.open(googleSearchUrl,'_blank');
+});
+

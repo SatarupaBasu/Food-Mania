@@ -440,14 +440,14 @@ line-height: 50px;
  font-size: 20px;
 }
 
-.offercontainer .offer-container .offer-box button {
+.offercontainer .offer-container .offer-box button a{
  background-color: red;
  cursor:pointer;
  font-size:17px;
- padding: auto;
  border:1px solid black;
  border-radius: 5px;
  box-shadow: 5px 5px 5px rgba(8, 8, 8, 0.331);
+ color: #151515;
 }
 .offercontainer .offer-container .offer-box img{
  position: relative;
