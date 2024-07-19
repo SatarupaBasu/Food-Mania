@@ -24,7 +24,7 @@
 }
 body{
   min-height: 100vh;
-  background: url('Pictures/Bg1.jpg') no-repeat;
+  background-image:linear-gradient(to right,  rgb(138, 19, 249),  rgb(250, 15, 203));
   background-size: cover;
   background-position: center;
 }
